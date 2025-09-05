@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSphere AI - Automate, Assist, Achieve</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="AutoSphereAI Logo.png" alt="AutoSphere AI Logo" class="logo-image">
+                    <h1>AutoSphere AI</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#about" class="nav-link">About</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="btn btn-secondary" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2 class="hero-title">
+                            Automate, Assist, <span class="highlight">Achieve</span>
+                        </h2>
+                        <p class="hero-subtitle">
+                            India's premier AI automation platform powered by IBM Watson. 
+                            Transform your workflows with intelligent assistance and achieve more with less effort.
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" id="start-chat">
+                                <i class="fas fa-comments"></i>
+                                Start Chat
+                            </button>
+                            <button class="btn btn-outline" id="learn-more">
+                                <i class="fas fa-play"></i>
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="ai-orb">
+                            <div class="orb-core"></div>
+                            <div class="orb-rings">
+                                <div class="ring ring-1"></div>
+                                <div class="ring ring-2"></div>
+                                <div class="ring ring-3"></div>
+                            </div>
+                            <div class="orb-particles">
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="gradient-text">Powerful Features</h2>
+                    <p>Leveraging IBM Watson AI for intelligent automation</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI-Powered Reasoning</h3>
+                        <p>Advanced reasoning and decision-making using IBM Granite models for complex problem-solving.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Multi-Source Intelligence</h3>
+                        <p>Access information from Google, Wikipedia, DuckDuckGo, and web crawling for comprehensive answers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <h3>Conversation Memory</h3>
+                        <p>Persistent memory across sessions with intelligent context retention for seamless interactions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Workflow Automation</h3>
+                        <p>End-to-end automation solutions for agriculture, healthcare, and education sectors.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <h3>India-Centric Focus</h3>
+                        <p>Tailored solutions for Indian markets with emphasis on social impact and economic growth.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Efficiency Optimization</h3>
+                        <p>Time and cost optimization recommendations with measurable value propositions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chat Interface -->
+        <section class="chat-section" id="chat">
+            <div class="container">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <div class="chat-title">
+                            <img src="AutoSphereAI Logo.png" alt="AutoSphere AI Logo" class="chat-logo">
+                            <h3>AutoSphere AI Assistant</h3>
+                        </div>
+                        <div class="chat-status">
+                            <span class="status-indicator" id="status-indicator"></span>
+                            <span class="status-text" id="status-text">Ready</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="message bot-message">
+                            <div class="message-avatar">
+                                <img src="AutoSphereAI Logo.png" alt="AutoSphere AI Logo" class="message-logo">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-text">
+                                    Hi, I am AutoSphere AI. How can I help you today? I'm here to assist with automation, provide intelligent solutions, and help you achieve more with AI-powered assistance.
+                                </div>
+                                <div class="message-time">Just now</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <div class="chat-input-wrapper">
+                            <input type="text" id="chat-input" placeholder="Ask me anything..." maxlength="500">
+                            <button class="send-btn" id="send-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <div class="input-actions">
+                            <button class="action-btn" id="clear-chat" title="Delete Chat">
+                                <i class="fas fa-trash"></i>
+                                <span>Delete Chat</span>
+                            </button>
+                            <button class="action-btn" id="export-chat" title="Export Chat">
+                                <i class="fas fa-download"></i>
+                                <span>Export Chat</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="gradient-text">About AutoSphere AI</h2>
+                    <p>Empowering India through intelligent automation</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Our Mission</h3>
+                        <p>AutoSphere AI is designed to leverage IBM's Watson AI services for creating end-to-end automation solutions with a focus on India-centric applications and social impact.</p>
+                        
+                        <h3>Technology Stack</h3>
+                        <ul class="tech-list">
+                            <li><strong>AI Framework:</strong> IBM Watson AI (watsonx.ai)</li>
+                            <li><strong>Language Model:</strong> IBM Granite-3-3-8b-instruct</li>
+                            <li><strong>Agent Framework:</strong> LangGraph with React Agent</li>
+                            <li><strong>Development:</strong> Python 3.11 with Jupyter Notebook</li>
+                        </ul>
+                        
+                        <h3>Key Applications</h3>
+                        <div class="applications-grid">
+                            <div class="app-item">
+                                <i class="fas fa-seedling"></i>
+                                <span>Agriculture</span>
+                            </div>
+                            <div class="app-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Healthcare</span>
+                            </div>
+                            <div class="app-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Education</span>
+                            </div>
+                            <div class="app-item">
+                                <i class="fas fa-hands-helping"></i>
+                                <span>Social Impact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="AutoSphereAI Logo.png" alt="AutoSphere AI Logo" class="footer-logo-image">
+                        <h3>AutoSphere AI</h3>
+                    </div>
+                    <p>Empowering automation through intelligent assistance for a better tomorrow.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Team</h4>
+                    <ul>
+                        <li>Vasantha Bhavishya</li>
+                        <li>Yatish Balaji G</li>
+                        <li>Vishal K R</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">IBM Watson AI</a></li>
+                        <li><a href="#" target="_blank">LangGraph Docs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoSphere AI. Developed for Gen AI India AI Hackathon.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Modal -->
+    <div class="modal" id="loading-modal">
+        <div class="modal-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p>Connecting to AutoSphere AI...</p>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal" id="settings-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Settings</h3>
+                <button class="close-btn" id="close-settings">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="setting-group">
+                    <label for="api-key">IBM Cloud API Key</label>
+                    <input type="password" id="api-key" placeholder="Enter your API key">
+                </div>
+                <div class="setting-group">
+                    <label for="project-id">Project ID</label>
+                    <input type="text" id="project-id" placeholder="Enter your project ID">
+                </div>
+                <div class="setting-group">
+                    <label for="theme-select">Theme</label>
+                    <select id="theme-select">
+                        <option value="auto">Auto</option>
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancel-settings">Cancel</button>
+                <button class="btn btn-primary" id="save-settings">Save Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
