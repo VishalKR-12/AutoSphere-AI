@@ -22,7 +22,13 @@ logger = logging.getLogger(__name__)
 
 # Initialize Flask app
 app = Flask(__name__, static_folder='.')
-CORS(app, origins=os.getenv('ALLOWED_ORIGINS', 'http://localhost:8000').split(','))
+
+# Configure CORS for production
+allowed_origins = os.getenv('ALLOWED_ORIGINS', '*')
+if allowed_origins == '*':
+    CORS(app)  # Allow all origins in production
+else:
+    CORS(app, origins=allowed_origins.split(','))
 
 # Global AI instance
 ai_instance = None
@@ -141,7 +147,7 @@ def main():
         logger.warning("Starting server without AI functionality")
     
     # Get server configuration
-    host = os.getenv('HOST', 'localhost')
+    host = os.getenv('HOST', '0.0.0.0')
     port = int(os.getenv('PORT', 8000))
     debug = os.getenv('DEBUG', 'False').lower() == 'true'
     
